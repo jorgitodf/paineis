@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 /src/config/globalConfig.js
+/src/store/actions/auth.action.js
+/public/.htaccess
 
 # testing
 /coverage

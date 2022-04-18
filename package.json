@@ -1,5 +1,6 @@
 {
   "name": "paineis",
+  "homepage": "http://paineisbi.alliedit.com.br/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

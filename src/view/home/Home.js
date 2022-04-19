@@ -11,48 +11,36 @@ export class Home extends Component {
     || username === 'larissa.castelo@alliedit.com.br' || username === 'gloria.silva@alliedit.com.br' 
     || username === 'luiz.vilela@alliedit.com.br' || username === 'jorgito.paiva@alliedit.com.br') {
       return (
-        <div className="mt-2 mt-md-2">
+        <div className="mt-2 mt-md-2 home">
           <div class="d-flex justify-content-center bd-highlight">
             <div class="p-2 bd-highlight">
               <Link to="/alliedit">
-                  <span className="card" style={{"display": "block"}}>
-                    AlliedIT
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">AlliedIT</button>
               </Link>
             </div>  
             <div class="p-2 bd-highlight">
               <Link to="/brasil21">
-                  <span className="card" style={{"display": "block"}}>
-                    Brasil 21
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">Brasil 21</button>
               </Link>
             </div> 
             <div class="p-2 bd-highlight">
               <Link to="/cimed">
-                  <span className="card" style={{"display": "block"}}>
-                    Cimed
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">Cimed</button>
               </Link>
             </div> 
             <div class="p-2 bd-highlight">
               <Link to="/gjp">
-                  <span className="card" style={{"display": "block"}}>
-                    GJP
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">GJP</button>
               </Link>
             </div>   
             <div class="p-2 bd-highlight">
               <Link to="/golden">
-                  <span className="card" style={{"display": "block"}}>
-                    Golden
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">Golden</button>
               </Link>
             </div>   
             <div class="p-2 bd-highlight">
               <Link to="/mundial">
-                  <span className="card" style={{"display": "block"}}>
-                    Mundial
-                  </span>
+                <button type="button" class="btn btn-secondary btn-lg">Mundial</button>
               </Link>
             </div>                                   
           </div>
@@ -62,7 +50,22 @@ export class Home extends Component {
     } else if (username === 'gerenciamanutencao@complexobrasil21.com.br') {
       return (
         <div className="mt-2 mt-md-2">
-          <h2><strong>Usuário ainda não possui permissão para visualizar o Painel de Bi</strong></h2>
+          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNWViMDFhMmQtMWI0Mi00ODU4LWEyOTEtYWJkMjA0MjQ5MGIyIiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
+          width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
+        </div>
+      )  
+    } else if (username === 'diretoria@complexobrasil21.com.br') {
+      return (
+        <div className="mt-2 mt-md-2">
+          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTNmZDQ1ZTItYzFjMy00Y2FhLWFhOWYtN2E3MTcwN2NhZmJhIiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
+          width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
+        </div>
+      )  
+    } else if (username === 'compras@complexobrasil21.com.br') {
+      return (
+        <div className="mt-2 mt-md-2">
+          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTIyNzY2YzMtZGUzYS00Yzk0LTg2OWEtNDZjZTM5Y2QyZDY5IiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
+          width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
         </div>
       )  
     } else {

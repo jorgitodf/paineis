@@ -38,6 +38,7 @@ export class Login extends Component {
         <Notify />
         <Container component="main" maxWidth="xs">
             <div className="mt-3 mt-md-5">
+              <div className='login'>
                 <div className='text-center'>
                   <Typography className="mt-3 font-weight-normal" component="h1" variant="h6">Entre com seu E-mail e Senha</Typography>
                 </div>
@@ -87,6 +88,7 @@ export class Login extends Component {
                     </ColorButton>
                   </Link>                              
                 </div>
+              </div>
             </div>
         </Container>    
       </div>

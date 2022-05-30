@@ -1,4 +1,26 @@
 .home {
-    background-color: #DCDCDC;
+    background-color: rgba(0, 32, 85, 0.65);
 }
 
+html{
+    background: url(https://alliedit.com.br/wp-content/uploads/2020/09/action-blur-close-up-scaled.jpg);
+    min-height: 100%!important;
+}
+body {
+    background:rgba(0, 32, 85, 0.65) url(https://alliedit.com.br/wp-content/uploads/2020/09/Logo-Allied-IT-Vetorizado.svg) no-repeat;
+    transition: background .3s,border-radius .3s,opacity .3s;
+    background-position: 50% 90%;
+    background-size: 200px;
+    min-height: 100vh!important;
+    padding: 10px;
+}  
+h1, input, label, .MuiInputBase-root{
+    color: #FFFFFF!important;
+}
+.MuiTextField-root{
+    border: #FFFFFF!important;
+}
+
+.panels {
+    padding: 0;
+}

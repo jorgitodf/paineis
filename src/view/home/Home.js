@@ -3,13 +3,15 @@ import {Link } from 'react-router-dom';
 
 export class Home extends Component {
   render() {
-    window.onunload = function(e) {
+  window.onunload = function(e) {
         localStorage.clear();
     };
+
     let username = localStorage.getItem('username');
+
     if (username === 'tarcisio.belo@alliedit.com.br' || username === 'katielle.caetano@alliedit.com.br'
     || username === 'larissa.castelo@alliedit.com.br' || username === 'gloria.silva@alliedit.com.br' 
-    || username === 'luiz.vilela@alliedit.com.br' || username === 'jorgito.paiva@alliedit.com.br') {
+    || username === 'felipe.rufo@alliedit.com.br' || username === 'jorgito.paiva@alliedit.com.br' || username === 'bruno.diniz@alliedit.com.br') {
       return (
         <div className="mt-2 mt-md-2 home">
           <div class="d-flex justify-content-center bd-highlight">
@@ -58,6 +60,20 @@ export class Home extends Component {
       return (
         <div className="mt-2 mt-md-2">
           <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTNmZDQ1ZTItYzFjMy00Y2FhLWFhOWYtN2E3MTcwN2NhZmJhIiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
+          width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
+        </div>
+      )  
+    } else if (username === 'alex.silva@gjphotels.com') {
+      return (
+        <div className="mt-2 mt-md-2">
+          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNTI1MmRhMjktMGE3Yy00ZjZjLWE2ZWQtZGM4NmJiZTc4NGVlIiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
+          width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
+        </div>
+      )  
+    } else if (username === 'ricardo.zamboni@mundiallogistics.com.br' || username === 'joao.almeida@mundiallogistics.com.br' || username === 'sidney.junior@alliedit.com.br') {
+      return (
+        <div className="mt-2 mt-md-2">
+          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiN2M5YWJkODAtYzEwMy00ZDRiLWI4YjAtY2QyZDdhZWVjODJmIiwidCI6IjFlNTk2ZmJkLWUzNWQtNDQzNS05ZWI2LTU1NjkwYmNlZGUwNiJ9" 
           width={1360} height={640} frameborder={0} allowFullScreen={true}></iframe>
         </div>
       )  
